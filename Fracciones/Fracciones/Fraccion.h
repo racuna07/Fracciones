@@ -20,7 +20,7 @@ public:
 private:
 	int numerador;
 	int denominador;
-	void simplificar(Fraccion &);
+	Fraccion simplificar(Fraccion &);
 
 
 
