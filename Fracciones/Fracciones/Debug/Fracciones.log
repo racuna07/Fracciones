@@ -1,0 +1,28 @@
+﻿  Fraccion.cpp
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.h(7): error C2143: syntax error: missing ';' before '&'
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.h(7): error C2433: 'ostream': 'friend' not permitted on data declarations
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.h(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.h(7): error C2238: unexpected token(s) preceding ';'
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.h(31): error C2143: syntax error: missing ';' before '&'
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.h(31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.h(31): error C2086: 'int ostream': redefinition
+  c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.h(7): note: see declaration of 'ostream'
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.h(31): error C2059: syntax error: ','
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(25): error C2561: 'Fraccion::operator +': function must return a value
+  c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(23): note: see declaration of 'Fraccion::operator +'
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(30): error C2561: 'Fraccion::operator -': function must return a value
+  c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(28): note: see declaration of 'Fraccion::operator -'
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(35): error C2561: 'Fraccion::operator /': function must return a value
+  c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(33): note: see declaration of 'Fraccion::operator /'
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(40): error C2561: 'Fraccion::operator *': function must return a value
+  c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(38): note: see declaration of 'Fraccion::operator *'
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(47): error C2143: syntax error: missing ';' before '&'
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(47): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(47): error C2086: 'int ostream': redefinition
+  c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.h(7): note: see declaration of 'ostream'
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(47): error C2065: 'out': undeclared identifier
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(47): error C2275: 'Fraccion': illegal use of this type as an expression
+  c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.h(5): note: see declaration of 'Fraccion'
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(47): error C2146: syntax error: missing ')' before identifier 'f'
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(48): error C2143: syntax error: missing ';' before '{'
+c:\users\usuario\desktop\rodrigo-cs\fracciones\fracciones\fracciones\fraccion.cpp(48): error C2447: '{': missing function header (old-style formal list?)
