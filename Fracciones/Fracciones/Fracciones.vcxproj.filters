@@ -35,5 +35,8 @@
     <ClCompile Include="Fraccion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ProgramaFraccion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

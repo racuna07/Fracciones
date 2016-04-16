@@ -12,8 +12,11 @@ Fraccion::Fraccion(Fraccion & f)
 {
 }
 
-Fraccion::~Fraccion()
+Fraccion::~Fraccion() //Joab
 {
+	this->numerador = 0;
+	this->denominador = 0;
+	delete this;
 }
 
 void Fraccion::operator=(Fraccion & otra)
@@ -22,22 +25,36 @@ void Fraccion::operator=(Fraccion & otra)
 
 Fraccion Fraccion::operator+(Fraccion otra)
 {
-	return ;
+	return otra;
 }
 
-Fraccion Fraccion::operator-(Fraccion otra)
-{
-	return ;
+Fraccion Fraccion::operator-(Fraccion otra) //Joab
+{	
+	Fraccion resultado = Fraccion(1, 1);
+	if (this->denominador == otra.denominador)
+	{
+		resultado = Fraccion(this->numerador - otra.numerador, this->denominador);
+	}
+	else
+	{
+		resultado = Fraccion((this->numerador*otra.denominador) - (otra.numerador*this->denominador), this->denominador*otra.denominador);
+	}
+	simplificar(resultado);
+	return resultado;
 }
 
-Fraccion Fraccion::operator/(Fraccion otra)
+Fraccion Fraccion::operator/(Fraccion otra) //Joab
 {
-	return ;
+	int aux = otra.denominador;
+	otra.denominador = otra.numerador;
+	otra.numerador = aux;
+	Fraccion resultado = operator*(otra);
+	return resultado;
 }
 
 Fraccion Fraccion::operator*(Fraccion otra)
 {
-	return ;
+	return otra;
 }
 
 void Fraccion::simplificar(Fraccion & f)
