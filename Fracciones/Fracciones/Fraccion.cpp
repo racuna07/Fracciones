@@ -44,7 +44,7 @@ Fraccion Fraccion::operator*(Fraccion otra)
 	return ;
 }
 
-Fraccion Fraccion::simplificar(Fraccion & f)
+Fraccion Fraccion::simplificar(Fraccion & f) //Basado en el codigo disponible en https://isseu.wordpress.com/2009/08/27/funcion-reducir-fraccion-c/ por Isseu
 {
 	int mcf=2;
 
