@@ -76,6 +76,6 @@ void Fraccion::simplificar(Fraccion & f)
 
 ostream & operator<<(ostream & out, Fraccion f)
 {
-	out << f.numerador << "/" << f.denominador << endl;
+	out << f.numerador << "/" << f.denominador;
 	return out;
 }
