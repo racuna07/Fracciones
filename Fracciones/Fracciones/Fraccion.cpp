@@ -25,7 +25,7 @@ void Fraccion::operator=(Fraccion & otra)
 {
 }
 
-Fraccion Fraccion::operator+(Fraccion otra) //Joab
+Fraccion Fraccion::operator+(Fraccion otra) 
 {
 	Fraccion resultado = Fraccion(1, 1);
 	if (this->denominador == otra.denominador)
@@ -40,7 +40,7 @@ Fraccion Fraccion::operator+(Fraccion otra) //Joab
 	return resultado;
 }
 
-Fraccion Fraccion::operator-(Fraccion otra) 
+Fraccion Fraccion::operator-(Fraccion otra) //Joab
 {	
 	Fraccion resultado = Fraccion(1, 1);
 	if (this->denominador == otra.denominador)
