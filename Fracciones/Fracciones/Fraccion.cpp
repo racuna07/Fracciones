@@ -12,6 +12,7 @@ Fraccion::Fraccion(int numerador, int denominador)
 
 Fraccion::Fraccion(Fraccion & f)
 {
+	*this = f;
 }
 
 Fraccion::~Fraccion() //Joab
@@ -23,6 +24,8 @@ Fraccion::~Fraccion() //Joab
 
 void Fraccion::operator=(Fraccion & otra)
 {
+	this->numerador = otra.numerador;
+	this->denominador = otra.numerador;
 }
 
 Fraccion Fraccion::operator+(Fraccion otra) 
@@ -70,8 +73,21 @@ Fraccion Fraccion::operator*(Fraccion otra)
 	return nueva;
 }
 
-void Fraccion::simplificar(Fraccion & f)
+Fraccion Fraccion::simplificar(Fraccion & f) //Basado en el codigo disponible en https://isseu.wordpress.com/2009/08/27/funcion-reducir-fraccion-c/ por Isseu
 {
+	int mcf = 2;
+
+	while ((mcf <= f.numerador) && (mcf <= f.denominador) && (f.numerador != 1) && (f.denominador != 1))
+	{
+		if ((f.numerador % mcf == 0) && (f.denominador % mcf == 0))
+		{
+			f.numerador = (f.numerador / mcf);
+			f.denominador = (f.denominador / mcf);
+		}
+		mcf++;
+	}
+
+	return f;
 }
 
 ostream & operator<<(ostream & out, Fraccion f)
