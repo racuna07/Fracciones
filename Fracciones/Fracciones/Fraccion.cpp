@@ -20,7 +20,8 @@ Fraccion::~Fraccion()
 
 void Fraccion::operator=(Fraccion &otra)
 {
-	*this(otra);
+	this->numerador = otra.numerador;
+	this->denominador = otra.numerador;
 }
 
 Fraccion Fraccion::operator+(Fraccion otra)
